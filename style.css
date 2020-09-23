@@ -17,7 +17,7 @@ body{
         
     }
     50%{margin-left: 38%;}
-    100%{margin-left: 100%;}
+    100%{margin-left: 74%;}
 }
 
 .content{
@@ -30,7 +30,7 @@ body{
 .content1{
     width: 50%;
     height: 500px;
-    background:url(lottery.jpg);
+    background:url(Images/lottery.jpg);
     background-size: cover;
     border: 10px solid white;
     box-sizing: border-box;
@@ -38,7 +38,7 @@ body{
 .content2{
     width: 50%;
     height:500px;
-    background:url(jackpot.jpg);
+    background:url(Images/jackpot.jpg);
     background-size: cover;
     border: 10px solid white;
     box-sizing: border-box;
