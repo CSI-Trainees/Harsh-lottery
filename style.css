@@ -1,0 +1,45 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+
+.foot{
+
+    width:100%;
+    height:105px;
+    background: black;
+}
+.logo{
+    animation: floating 20s infinite;
+}
+@keyframes floating{
+    0%{margin-left: 0;
+        
+    }
+    50%{margin-left: 38%;}
+    100%{margin-left: 100%;}
+}
+
+.content{
+    display:flex;
+    width:100%;
+    height: 500px;
+    background:red;
+}
+
+.content1{
+    width: 50%;
+    height: 500px;
+    background:url(lottery.jpg);
+    background-size: cover;
+    border: 10px solid white;
+    box-sizing: border-box;
+}
+.content2{
+    width: 50%;
+    height:500px;
+    background:url(jackpot.jpg);
+    background-size: cover;
+    border: 10px solid white;
+    box-sizing: border-box;
+}
