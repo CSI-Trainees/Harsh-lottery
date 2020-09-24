@@ -3,22 +3,30 @@
 <head>
 <title>LOTTERY SITE</title>  
 <link rel="stylesheet" href="style.css">
+<script>
+   window.onload=function(){ function funclick(){
+        let random=Math.floor((Math.random()*20)+10);
+        while(random>20)
+        {random=Math.floor((Math.random()*20)+10);
+        }
+        document.getElementById("lotto").innerHTML=random;
+    }
+  }
+</script>    
 </head>
 <body>
 <div class="foot">
-<img src="Images/logo.gif" class="logo" >
+    <img src="Images/logo.gif" class="logo" >
 </div>
 <div class="content">
-<div class="content1" >
+    <div class="content1" >
+        <h2 class="spin">Lucky spin</h2>
+         <h5 id="lott">Get Your Lucky No</h5>
+        <button type="button" onclick='funclick()'><b>Click me</b></button>
     </div> 
     <div class="content2">
     </div>
-    
-    
-</div>    
-   
-    
-    
-       
+</div>  
 </body> 
+ 
 </html>
