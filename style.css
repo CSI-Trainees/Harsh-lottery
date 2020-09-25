@@ -43,6 +43,7 @@ body{
     background-size: cover;
     border: 10px solid white;
     box-sizing: border-box;
+    opacity: 0.8;
 }
 
 .spin{
@@ -60,8 +61,9 @@ body{
     font-size: 50px;
     text-align: center;
     padding: 0px;
+    margin-bottom: 0px;
 }
-button{
+.ty{
     background:url(Images/spin.png);
     height: 75px;
     width: 75px;
@@ -70,7 +72,71 @@ button{
     border-radius: 50px;
     background-repeat: no-repeat;
     margin-left: 45%;
+    margin-top: 0px;
+    padding: 0px;
     
     
 }
+#numb{
+ margin-left: 35%;
+}
+#demo{
+    margin-left: 33%;
+    font-size: 30px;
+    font-weight: bolder;
+    background: white;
+    display:inline;
+}
+#winner{
+    width: 49%;
+    height:62%;
+    margin: 0px;
+    position: absolute;
     
+}
+    .footersection{ 
+        background: black;
+        display:flex;
+        flex-direction: column;
+	height: 150px;
+
+}
+   
+.foote{
+    background-image:url(Images/foot.jpg);
+    height: 100px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position:absolute;
+    
+
+}
+ .yt{
+        
+        height:40px;
+        width:40px;
+        margin: 10px; 
+        padding:5px;
+        
+        transform: rotate(0deg) scale(1);
+        transition: 0.1 s;
+       border-bottom:  2px dotted white;
+       
+    }
+    .yt:hover{
+        transform: rotate(20deg) scale(1.2);
+        
+    }
+.copy{
+    color: red;
+    font-size:20px;
+    text-align: center;
+    position: relative;
+    padding-top:10px;
+
+}
+.move{margin-left: 43%;}
+       
+

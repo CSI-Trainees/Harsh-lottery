@@ -3,16 +3,7 @@
 <head>
 <title>LOTTERY SITE</title>  
 <link rel="stylesheet" href="style.css">
-<script>
-   window.onload=function(){ function funclick(){
-        let random=Math.floor((Math.random()*20)+10);
-        while(random>20)
-        {random=Math.floor((Math.random()*20)+10);
-        }
-        document.getElementById("lotto").innerHTML=random;
-    }
-  }
-</script>    
+    
 </head>
 <body>
 <div class="foot">
@@ -22,11 +13,68 @@
     <div class="content1" >
         <h2 class="spin">Lucky spin</h2>
          <h5 id="lott">Get Your Lucky No</h5>
-        <button type="button" onclick='funclick()'><b>Click me</b></button>
+        <button class="ty" type="button" onclick="document.getElementById('lott'). innerHTML =funclick()"><b>Click me</b></button>
+        
+        <script>
+   function funclick(){
+        let random=Math.floor((Math.random()*20)+10);
+        while(random>20)
+        {random=Math.floor((Math.random()*20)+10);
+        }
+        
+     return random;
+    }
+  
+</script>
     </div> 
     <div class="content2">
+        <img src="Images/tenor.gif" id="winner" style="visibility: hidden" >
+        <h2 class="spin" >Enter Your Lucky no</h2> 
+        <input id="numb">
+
+          <button  type="button" onclick="myFunction()">Submit</button>
+        
+<br><br><br>
+
+          <p id="demo"></p>
+        <script>
+function myFunction() {
+  var x, text;
+
+  
+  x = document.getElementById("numb").value;
+
+  
+  if (x>=10 && x<=20) {
+    if(x==17)
+         document.getElementById("winner").style.visibility="visible";
+      
+      else
+          text="Better Luck Next Try";
+  } else {
+    text = "Input is in valid";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
     </div>
-</div>  
+    </div>
+    <footer class="footersection" >
+           
+    <div class="foote"></div> 
+     <div class="move">
+    <img src="Images/email.png" class="yt">    
+      <img src="Images/insta.png" class="yt">
+        <img src="Images/fb.png" class="yt">   
+         </div>
+                     
+         
+         
+    <div class="copy">
+        <p>@Copyright Lottery 2020</p>
+         </div>     
+         
+       </footer> 
 </body> 
  
 </html>
